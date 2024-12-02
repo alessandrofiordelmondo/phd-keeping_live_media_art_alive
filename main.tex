@@ -5,10 +5,12 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{subcaption,graphicx}
-% \usepackage{natbib}
 \usepackage{mathtools}  % loads amsmath
 \usepackage{amssymb}    % loads amsfonts
 \usepackage{amsthm}
+
+\usepackage{biblatex} %Imports biblatex package
+\addbibresource{bib.bib} %Import the bibliography file
 
 %% Use these commands to set biographic information for the title page:
 \newcommand{\thesistitle}{A computational model for documenting, preserving and reactivating contemporary forms of art}
@@ -87,7 +89,8 @@
 
 
 % Format a LaTeX bibliography
-\makebibliography
+\printbibliography %Prints bibliography
+
 \nocite{*}
 
 % Figures and tables, if you decide to leave them to the end

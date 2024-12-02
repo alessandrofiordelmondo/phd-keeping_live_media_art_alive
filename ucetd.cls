@@ -107,8 +107,8 @@
 \newcommand{\etdDefaultPointSize}{12pt}
 
 % Default line spacing
-%\newcommand{\etdDefaultSpacing}{\setstretch{1.37}}
-\newcommand{\etdDefaultSpacing}{\doublespacing}
+\newcommand{\etdDefaultSpacing}{\setstretch{1.2}}
+% \newcommand{\etdDefaultSpacing}{\doublespacing}
 
 % Parent document class
 \newcommand{\etdParentClass}{report}
@@ -199,16 +199,16 @@
 % Start the main thesis body
 \newcommand{\mainmatter}{\etdMainMatter}
 
-% Bibliography
-\newcommand{\makebibliography}{
-	\cleardoublepage
-	\phantomsection
-	\addcontentsline{toc}{chapter}{References}
-	\begin{singlespace}
-		% Add/change your bibliography file(s) here
-		\bibliography{bib}
-		\bibliographystyle{plainnat}
-	\end{singlespace}
+% % Bibliography
+% \newcommand{\makebibliography}{
+% 	\cleardoublepage
+% 	\phantomsection
+% 	\addcontentsline{toc}{chapter}{References}
+% 	\begin{singlespace}
+% 		% Add/change your bibliography file(s) here
+% 		\bibliography{bib}
+% 		\bibliographystyle{plainnat}
+% 	\end{singlespace}
 }
 
 %
@@ -343,8 +343,8 @@
 
 % Change names of table of contents and bibliography
 
-\renewcommand{\contentsname}{Table of Contents}
-\renewcommand{\bibname}{References}
+% \renewcommand{\contentsname}{Table of Contents}
+% \renewcommand{\bibname}{References}
 
 % Change the margins to fit requirements
 
