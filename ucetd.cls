@@ -206,7 +206,7 @@
 	\addcontentsline{toc}{chapter}{References}
 	\begin{singlespace}
 		% Add/change your bibliography file(s) here
-		\bibliography{references}
+		\bibliography{bib}
 		\bibliographystyle{plainnat}
 	\end{singlespace}
 }
