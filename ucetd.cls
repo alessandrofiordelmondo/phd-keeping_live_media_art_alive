@@ -60,22 +60,28 @@
 	\hypersetup{pageanchor=false}
 	\begin{titlepage}
 		\begin{center}
-			\rule{0in}{0.55in} % Artificial extra [old=0.95in] margin. Why not vspace?
-			THE UNIVERSITY OF CHICAGO\\
+			\rule{0in}{0.55in}
+			UNIVERSITY OF UDINE\\
 			\vspace{0.8in}
-			\MakeUppercase{\@title}\\
-			\vspace{1.0in}
-			A DISSERTATION SUBMITTED TO\\
-			THE FACULTY OF THE DIVISION OF THE \MakeUppercase{\@division}\\
-			IN CANDIDACY FOR THE DEGREE OF\\
+			\large \MakeUppercase{\textbf{\@title}}\\
+			\vspace{.5in}
+      \normalsize
+			% A DISSERTATION SUBMITTED TO\\
+			% THE FACULTY OF THE DIVISION OF THE \MakeUppercase{\@division}\\
+			% IN CANDIDACY FOR THE DEGREE OF\\
 			\MakeUppercase{\@degree}\\
 			\ \\
 			DEPARTMENT OF \MakeUppercase{\@department}\\
 			\vspace{1.0in}
-			BY\\
-			\MakeUppercase{\@author}\\
+			\scriptsize BY\\
+			\normalsize \MakeUppercase{\@author}\\
+      \vspace{0.1in}
+      \scriptsize SUPERVISED BY\\
+      \normalsize \MakeUppercase{Cosetta Saba}\\
+      \normalsize \MakeUppercase{Segio Canazza}
+      \\
 			\vspace{0.8in}
-			CHICAGO, ILLINOIS\\
+			Udine, Italy\\
 			\MakeUppercase{\@date}
 			\vspace*{0.45in}
 		\end{center}

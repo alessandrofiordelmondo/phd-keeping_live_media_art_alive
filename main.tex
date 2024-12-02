@@ -11,11 +11,11 @@
 \usepackage{amsthm}
 
 %% Use these commands to set biographic information for the title page:
-\newcommand{\thesistitle}{Thesis Title}
-\newcommand{\thesisauthor}{Thesis Author}
-\department{Thesis Department}
+\newcommand{\thesistitle}{A computational model for documenting, preserving and reactivating contemporary forms of art}
+\newcommand{\thesisauthor}{Alessandro Fiordelmondo}
+\department{Humanities and Cultural Heritage (DIUM)\\ Cinema, Music, Media culture}
 \division{Thesis Division}
-\degree{Type of Degree}
+\degree{PhD Thesis}
 \date{Graduation Date}
 
 \title{\thesistitle}
@@ -59,7 +59,7 @@
 \listoffigures
 \listoftables
 
-\acknowledgments
+% \acknowledgments
 % Enter Acknowledgements here
 
 \abstract
@@ -68,12 +68,23 @@
 \mainmatter
 % Main body of text follows
 
-\chapter{Introduction}
-% Introductory stuff
+\include{chapters/1-introduction}
 
-\chapter{A Chapter}
-\section{Introduction}
-% Intro to chapter one
+\include{chapters/2-state_of_the_art}
+
+\include{chapters/3-new_conservation_paradigms}
+
+\include{chapters/4-conservation_models_and_processes}
+
+\include{chapters/5-mdc_model_and_visual_language_application}
+
+\appendix
+
+\include{chapters/a-videoloop}
+\include{chapters/b-ilcaosdellesfere}
+\include{chapters/c-livelectronics}
+\include{chapters/d-nime}
+
 
 % Format a LaTeX bibliography
 \makebibliography
