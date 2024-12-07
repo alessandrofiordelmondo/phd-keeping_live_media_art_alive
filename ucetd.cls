@@ -104,10 +104,10 @@
 %%
 
 % Default font point size
-\newcommand{\etdDefaultPointSize}{12pt}
+\newcommand{\etdDefaultPointSize}{11pt}
 
 % Default line spacing
-\newcommand{\etdDefaultSpacing}{\setstretch{1.2}}
+\newcommand{\etdDefaultSpacing}{\setstretch{1.25}}
 % \newcommand{\etdDefaultSpacing}{\doublespacing}
 
 % Parent document class
