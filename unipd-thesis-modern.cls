@@ -583,7 +583,6 @@
 
 
 
-
 % -- BACKMATTER --
 \renewcommand{\backmatter}{
     %\cleardoublepage
@@ -622,7 +621,3 @@
   linkcolor=mainColor,
   urlcolor=mainColor
 }
-
-
-
-
