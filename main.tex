@@ -5,6 +5,7 @@
 \PassOptionsToPackage{pdfa}{hyperref}
 \documentclass{unipd-thesis-modern} % src: https://github.com/baronefr/unipd-thesis-modern
 %  print layout: two-sided with binding on the left
+\usepackage{longtable}
 
 
 % I recommend to validate/convert the PDF/A file with the following tool:
@@ -25,18 +26,17 @@
 
 
 % titles
-\title{A modern template for a thesis\\at University of Padua}
-\thesisHeader{University of Padua, Department of Physics and Astronomy ``G. Galilei''\\Master Thesis in Physics}
+\title{Keeping Live Media Art alive}
+\thesisHeader{University of Udine, Department of Department of Humanities and Cultural Heritage\\Ph.D. Thesis in Cinema, Music, Media culture}
 \academicYear{2024/2025}
 
 % student
-\author{Student Name Surname}
-\studentId{1234567}
+\author{Alessandro Fiordelmondo}
+% \studentId{1234567}
 
 % supervisor(s)Zürich
-\advisor{Prof. Erwin Schrödinger}{University of Zürich} % (mandatory)
-\coadvisor{Dr. Batman Wayne}{University of Princeton} % (optional, comment to remove)
-\otheradvisor{Prof. Paolino Paperino}{University of Padua} % (optional, comment to remove)
+\advisor{Cosetta Saba}{University of Udine} % (mandatory)
+\otheradvisor{Sergio Canazza}{University of Padua} % (optional, comment to remove)
 % ^ NOTE: you can use optional arg to customize the label "Internal Supervisor"
 %   example:   \otheradvisor[The best supervisor!]{Prof. Paolino Paperino}{University of Padua}
 
@@ -47,7 +47,7 @@
 \secondpage{\input{docs/secondcover}}
 
 % dedication (comment to remove)
-\dedication{\textit{To my parents\\and friends}}
+% \dedication{\textit{To my parents\\and friends}}
 
 
 % custom symbols (optional)
@@ -76,17 +76,14 @@
     \input{chapters/introduction}
     \glsresetall  % reset gls after introduction (suggested, but optional)
 
-    % --------------------------
-    \part{\label{prt:demo}Demo of the template features} % NOTE: dividing in parts is optional
 
-    \input{chapters/demo-basic}
-    % NOTE: I suggest to create a file for each chapter, like the previous \input{}.
+    \input{chapters/1-state_of_the_art}
 
-
-    % --------------------------
-    \part{\label{prt:filler}Filler part}
+    \input{chapters/2-new_conservation_paradigms}
     
-    \input{chapters/demo-filler}
+    \input{chapters/3-meta-models_and_visual_language}
+    
+    \input{chapters/4-MDC_model_application}
 
     % conclusion ---------------
     \input{chapters/conclusions}
@@ -94,7 +91,11 @@
     
     % appendices ---------------
     \begin{appendices}
-        \include{chapters/demo-appendix}
+        \include{chapters/appendix/a-michele_sambin_videoloop}
+        \include{chapters/appendix/b-hybrid_reactivation_il_caos_delle_sfere}
+        \include{chapters/appendix/c-the_score_in_live_electronics_music}
+        \include{chapters/appendix/d-sustainability_and_longevity_of_NIMEs}
+        \include{chapters/appendix/e-web_review_tables}
     \end{appendices}
 
     % glossary, bibliography, acknowledges

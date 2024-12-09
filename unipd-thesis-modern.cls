@@ -85,8 +85,9 @@
     \definecolor{aliceblue}{RGB}{0.94, 0.97, 1.0}
     
     % color refs
-    \definecolor{mainColor}{RGB}{155, 0, 20}
-    \definecolor{chapterColor}{RGB}{155, 0, 20}
+    \definecolor{uniudColor1}{RGB}{92, 64, 60} % brown
+    \definecolor{uniudColor2}{RGB}{255, 102, 0} % orange
+    \definecolor{uniudColor3}{RGB}{119, 151, 171} % blue
     %   Note: unipd color is {RGB}{155, 0, 20}
 
 
@@ -169,7 +170,7 @@
 % advisors
 \def\advisor#1#2{\gdef\@advisor{#1} \gdef\@advisorUniversity{#2}}
 \def\coadvisor#1#2{\gdef\@coadvisor{#1} \gdef\@coadvisorUniversity{#2}}
-\newcommand{\otheradvisor}[3][Internal Supervisor]{\gdef\@otheradvisor{#2} \gdef\@otheradvisorUniversity{#3} \gdef\@otheradvisorDenomination{#1}}
+\newcommand{\otheradvisor}[3][]{\gdef\@otheradvisor{#2} \gdef\@otheradvisorUniversity{#3} \gdef\@otheradvisorDenomination{#1}}
 \makeatother
 
 % make these empty by default
@@ -225,7 +226,7 @@
  	  {\begin{tikzpicture}[remember picture,overlay]
     \node[yshift=-8cm] at (current page.north west)
       {\begin{tikzpicture}[remember picture, overlay]
-        \fill[chapterColor] (0,0) rectangle(35.5mm,15mm);
+        \fill[uniudColor3] (0,0) rectangle(35.5mm,15mm);
         \node[anchor=north east,yshift=-7.1cm,xshift=32mm,minimum height=30mm,inner sep=0mm] at (current page.north west)
         {\parbox[top][30mm][t]{15mm}{\raggedleft 
         \color{white}\bfseries\chapterlabel}};
@@ -244,7 +245,7 @@
  	  {\begin{tikzpicture}[remember picture,overlay]
     \node[yshift=-8cm] at (current page.north west)
       {\begin{tikzpicture}[remember picture, overlay]
-        \fill[chapterColor] (0,0) rectangle(35.5mm,15mm);
+        \fill[uniudColor3] (0,0) rectangle(35.5mm,15mm);
         \node[anchor=north west,yshift=-7.1cm,xshift=45mm,text width=\textwidth,minimum height=30mm,inner sep=0mm] at (current page.north west)
               {\parbox[top][30mm][t]{\textwidth}{\color{black}#1}};
        \end{tikzpicture}
@@ -333,13 +334,17 @@
 
     % add watermark
     \thiswatermark{\centering
-    \put(-294,-750){\includegraphics[width=1.4\linewidth]{template/unipdbg}}
+    \put(-294,-750){\includegraphics[width=1.4\linewidth]{template/uniudbg.pdf}}
     }
 
     % logo(s)
-    {\hspace{-22.5mm}\noindent\printlogos[2.4cm]{template/universis}}
+    {\hspace{-31.5mm}\noindent\printlogos[3cm]{template/uniudlogo}}
     %  NOTE: you can add a list of images to add more logos. Example:
     %      \printlogos[2.4cm]{template/universis}
+    {\hspace{-5mm}\noindent\raisebox{\dimexpr 1.125cm \relax}{\printlogos[1.875cm]{template/diumlogo}}}
+    {\hspace{-5mm}\noindent\raisebox{\dimexpr 1.125cm \relax}{\printlogos[1.875cm]{template/ailogo}}}
+    {\hspace{-6mm}\noindent\raisebox{\dimexpr 0.875cm \relax}{\printlogos[2.375cm]{template/ponlogo}}}
+    % \printlogos[2.4cm]{template/ponlogo}
 
     % content
     \begin{flushleft}
@@ -357,16 +362,16 @@
     
     % author and advisors 
     \doublespacing
-    \vspace{1.7cm}
+    \vspace{1cm}
     \begin{flushleft}
-    
-        \large{\textbf{\@author}} \\
-        \small{ ID \@studentId}\\
+        \normalsize\textsc{Author} \\
+        \Large{\textbf{\@author}} \\
+        % \small{ ID \@studentId}\\
 
     % supervisor
     \vspace{2.7cm}
     \begin{minipage}[t]{7cm}
-        \textsc{Supervisor}\\
+        \normalsize\textsc{Supervisors}\\
         {\setlength\parindent{1mm}
         \indent\large{\textbf{\@advisor}}\\
         \indent\small\textbf{\@advisorUniversity}
@@ -375,7 +380,7 @@
     \begin{minipage}[t]{7cm}
       % insert other advisor, if not empty
       \ifx\@otheradvisor\empty \else
-        \textsc{\@otheradvisorDenomination}\\
+        \normalsize\textsc{\@otheradvisorDenomination}\\
         {\setlength\parindent{1mm}
         \indent\large{\textbf{\@otheradvisor}}\\
         \indent\small\textbf{\@otheradvisorUniversity}
@@ -386,7 +391,7 @@
       % insert co-advisor, if not empty
       \ifx\@coadvisor\empty \else
         \vspace{1cm}
-        \textsc{Co-supervisor}\\
+        \normalsize\textsc{Co-supervisor}\\
         {\setlength\parindent{1mm}
         \indent\large{\textbf{\@coadvisor}}\\
         \indent\small\textbf{\@coadvisorUniversity}
@@ -470,7 +475,6 @@
     \doublespacing
     \begin{flushleft}
         \Large{\textbf{\@author}} \\
-        { ID \@studentId}\\
     % supervisor
     \vspace{1.8cm}
     \begin{minipage}[t]{8cm}
@@ -544,7 +548,7 @@
     \input{docs/abstract}
     % italian version
     \cleardoublepage
-    \input{docs/sommario}
+    % \input{docs/sommario}
 }
 
 
@@ -616,8 +620,8 @@
 %\RequirePackage{hyperref}
 \hypersetup{
   colorlinks,
-  citecolor=mainColor,
+  citecolor=uniudColor1,
   filecolor=black,
-  linkcolor=mainColor,
-  urlcolor=mainColor
+  linkcolor=uniudColor1,
+  urlcolor=uniudColor1
 }
