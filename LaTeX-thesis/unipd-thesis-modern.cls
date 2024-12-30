@@ -603,11 +603,11 @@
     \addcontentsline{toc}{chapter}{\bibname}
     \printbibliography
   
-    % acknowledgments
-    \cleardoublepage
-    \phantomsection
-    \addcontentsline{toc}{chapter}{\acknowledgmentsname}
-    \acknowledgments
+    % % acknowledgments
+    % \cleardoublepage
+    % \phantomsection
+    % \addcontentsline{toc}{chapter}{\acknowledgmentsname}
+    % \acknowledgments
 }
 
 
