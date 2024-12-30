@@ -7,6 +7,92 @@
 %  print layout: two-sided with binding on the left
 \usepackage{longtable}
 
+%% PACKAGES UPLOAD BY ME
+\usepackage{adjustbox}      %ADJUST THE WIDTH OF THE TABLE 
+\usepackage{multicol}       % FOR MULTICOLUMN LIST 
+\usepackage{rotating}       % FOR ROTATE IMAGES
+\usepackage{listings}       % FOR CODE
+\usepackage{pdflscape}
+
+% Define the Cypher style for listings
+\lstdefinestyle{cypher}{
+    language=sql,  % Cypher is similar to SQL
+    basicstyle=\ttfamily\footnotesize,  % Typewriter font for the code
+    keywordstyle=\color{blue}\bfseries,  % Keywords in blue and bold
+    commentstyle=\color{gray},  % Comments in gray
+    stringstyle=\color{red},  % Strings in red
+    identifierstyle=\color{black},  % Identifiers in black
+    showstringspaces=false,  % Don't show spaces in strings
+    numbers=left,  % Line numbers on the left
+    numberstyle=\tiny\color{gray},  % Style of line numbers
+    stepnumber=1,  % Number every line
+    numbersep=10pt,  % Distance between code and line numbers
+    backgroundcolor=\color{white},  % Background color of the code block
+    frame=single,  % Draw a frame around the code block
+    tabsize=2,  % Set tab size to 2 spaces
+    breaklines=true,  % Break long lines
+    captionpos=b,  % Caption at the bottom of the block
+}
+
+% Define the JSON style for listings
+\lstdefinestyle{json}{
+    language=json,  % Use JSON language for syntax highlighting
+    basicstyle=\ttfamily\footnotesize,  % Typewriter font for the code
+    keywordstyle=\color{blue},  % Keywords (true/false/null) in blue
+    commentstyle=\color{green},  % Comments in green (if any)
+    stringstyle=\color{red},  % Strings in red
+    identifierstyle=\color{black},  % Identifiers in black
+    showstringspaces=false,  % Don't show spaces in strings
+    numbers=left,  % Line numbers on the left
+    numberstyle=\tiny\color{gray},  % Style of line numbers
+    stepnumber=1,  % Number every line
+    numbersep=10pt,  % Distance between code and line numbers
+    backgroundcolor=\color{white},  % Background color of the code block
+    frame=single,  % Draw a frame around the code block
+    tabsize=2,  % Set tab size to 2 spaces
+    breaklines=true,  % Break long lines
+    captionpos=b,  % Caption at the bottom of the block
+    literate={"}{{\textquotedbl}}1 {,}{{\texttt{,}}}1 {:}{{\texttt{:}}}1
+}
+
+% Define the style for markdown content
+\lstdefinestyle{markdown}{
+    language=markdown,  % Specify the language to be Markdown
+    basicstyle=\ttfamily\footnotesize,  % Typewriter font
+    keywordstyle=\color{blue},  % Keywords in blue (like headings, bold, etc.)
+    commentstyle=\color{green},  % Comments in green
+    stringstyle=\color{red},  % Strings in red (links, etc.)
+    identifierstyle=\color{black},  % Identifiers in black
+    showstringspaces=false,  % Do not show spaces in strings
+    numbers=none,  % No line numbers for markdown
+    backgroundcolor=\color{white},  % Background color of the code block
+    frame=single,  % Frame around the code block
+    tabsize=4,  % Set tab size to 4 spaces
+    breaklines=true,  % Break long lines
+    captionpos=b,  % Caption at the bottom of the block
+    morekeywords={# , ## , ### , ** , * , - , + , [ ]}  % Highlight common markdown symbols
+}
+
+% Define the style for terminal commands
+\lstdefinestyle{bash}{
+    language=bash,  % Specify the language to be Bash (for terminal commands)
+    basicstyle=\ttfamily\footnotesize,  % Typewriter font
+    keywordstyle=\color{blue},  % Keywords in blue
+    commentstyle=\color{green},  % Comments in green
+    stringstyle=\color{red},  % Strings in red
+    identifierstyle=\color{black},  % Identifiers in black
+    showstringspaces=false,  % Do not show spaces in strings
+    numbers=left,  % Show line numbers on the left
+    numberstyle=\tiny\color{gray},  % Line number style
+    stepnumber=1,  % Number every line
+    numbersep=10pt,  % Distance between the code block and line numbers
+    backgroundcolor=\color{white},  % Background color of the code block
+    frame=single,  % Frame around the code block
+    tabsize=4,  % Set tab size to 4 spaces
+    breaklines=true,  % Break long lines
+    captionpos=b,  % Caption at the bottom of the block
+    morekeywords={echo, ls, cd, mkdir, rm, sudo}  % Highlight some terminal commands
+}
 
 % I recommend to validate/convert the PDF/A file with the following tool:
 % https://www.pdfforge.org/online/en/validate-pdfa
@@ -27,7 +113,7 @@
 
 % titles
 \title{Keeping Live Media Art alive}
-\thesisHeader{University of Udine, Department of Department of Humanities and Cultural Heritage\\Ph.D. Thesis in Cinema, Music, Media culture}
+\thesisHeader{University of Udine, Department of Humanities and Cultural Heritage (DIUMwha)\\Ph.D. Thesis in Cinema, Music, Media culture}
 \academicYear{2024/2025}
 
 % student
@@ -77,13 +163,15 @@
     \glsresetall  % reset gls after introduction (suggested, but optional)
 
 
-    \input{chapters/1-state_of_the_art}
+    \input{chapters/0-methodology}
+    
+    \input{chapters/1-state_of_the_art/1-state_of_the_art}
 
-    \input{chapters/2-new_conservation_paradigms}
+    \input{chapters/2-new_conservation_paradigms/2-new_conservation_paradigms}
     
-    \input{chapters/3-meta-models_and_visual_language}
+    \input{chapters/3-mdc_model-reactivation_workflow-instruction_template/3-mdc_model-reactivation_workflow-instruction_template}
     
-    \input{chapters/4-MDC_model_application}
+    \input{chapters/4-MDC_model_application/4-MDC_model_application}
 
     % conclusion ---------------
     \input{chapters/conclusions}
@@ -91,11 +179,12 @@
     
     % appendices ---------------
     \begin{appendices}
-        \include{chapters/appendix/a-michele_sambin_videoloop}
-        \include{chapters/appendix/b-hybrid_reactivation_il_caos_delle_sfere}
-        \include{chapters/appendix/c-the_score_in_live_electronics_music}
-        \include{chapters/appendix/d-sustainability_and_longevity_of_NIMEs}
+        \include{chapters/appendix/a/a-michele_sambin_videoloop}
+        \include{chapters/appendix/b/b-hybrid_reactivation_il_caos_delle_sfere}
+        \include{chapters/appendix/c/c-the_score_in_live_electronics_music}
+        \include{chapters/appendix/d/d-sustainability_and_longevity_of_NIMEs}
         \include{chapters/appendix/e-web_review_tables}
+        \include{chapters/appendix/f-table_of_organisations}
     \end{appendices}
 
     % glossary, bibliography, acknowledges

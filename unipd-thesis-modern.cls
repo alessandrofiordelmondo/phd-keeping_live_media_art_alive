@@ -414,7 +414,7 @@
 
 
 
-% -- DEDICATION --
+% -- DEDICATION --  
 \newcommand{\dedicationpage} {
 \ifx\@dedication\empty \else
     % set empty style for this page (no headers and footers)
