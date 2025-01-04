@@ -16,6 +16,9 @@
 
 \usepackage{hyperref}
 
+\usepackage{pdfpages}
+
+\usepackage[a-1b]{pdfx} % Creates a PDF/A-1b compliant file
 
 % Define the Cypher style for listings
 \lstdefinestyle{cypher}{
@@ -73,7 +76,7 @@
     tabsize=4,  % Set tab size to 4 spaces
     breaklines=true,  % Break long lines
     captionpos=b,  % Caption at the bottom of the block
-    morekeywords={# , ## , ### , ** , * , - , + , [ ]}  % Highlight common markdown symbols
+    % morekeywords={# , ## , ### , ** , * , - , + , [ ]}  % Highlight common markdown symbols
 }
 
 % Define the style for terminal commands
@@ -115,8 +118,8 @@
 
 
 % titles
-\title{Keeping Live Media Art alive}
-\thesisHeader{University of Udine, Department of Humanities and Cultural Heritage (DIUMwha)\\Ph.D. Thesis in Cinema, Music, Media culture}
+\title{Keeping Live Media Art Alive}
+\thesisHeader{University of Udine, Department of Humanities and Cultural Heritage (DIUM)\\Ph.D. Thesis in Art History, Film Studies, Media Studies, and Music}
 \academicYear{2024/2025}
 
 % student
@@ -133,14 +136,14 @@
 
 
 % add notes at the bottom of the second page (optional)
-\secondpage{\input{docs/secondcover}}
+\secondpage{\input{LaTeX-thesis/docs/secondcover}}
 
 % dedication (comment to remove)
 % \dedication{\textit{To my parents\\and friends}}
 
 
 % custom symbols (optional)
-\input{custom-symbols}
+\input{LaTeX-thesis/custom-symbols}
 
 % bibliography file
 \addbibresource{refs.bib}
@@ -155,6 +158,8 @@
 
 
 \begin{document}
+    \includepdf[pages=1]{LaTeX-thesis/Frontespizio tesi_PON.pdf}
+
     % cover, ToC, abstract
     \frontmatter
 
@@ -162,32 +167,32 @@
     \mainmatter
 
     % introduction -------------
-    \input{chapters/introduction}
+    \input{LaTeX-thesis/chapters/introduction}
     \glsresetall  % reset gls after introduction (suggested, but optional)
 
 
-    \input{chapters/0-methodology}
+    \input{LaTeX-thesis/chapters/0-methodology}
     
-    \input{chapters/1-state_of_the_art/1-state_of_the_art}
+    \input{LaTeX-thesis/chapters/1-state_of_the_art/1-state_of_the_art}
 
-    \input{chapters/2-new_conservation_paradigms/2-new_conservation_paradigms}
+    \input{LaTeX-thesis/chapters/2-new_conservation_paradigms/2-new_conservation_paradigms}
     
-    \input{chapters/3-mdc_model-reactivation_workflow-instruction_template/3-mdc_model-reactivation_workflow-instruction_template}
+    \input{LaTeX-thesis/chapters/3-mdc_model-reactivation_workflow-instruction_template/3-mdc_model-reactivation_workflow-instruction_template}
     
-    \input{chapters/4-MDC_model_application/4-MDC_model_application}
+    \input{LaTeX-thesis/chapters/4-MDC_model_application/4-MDC_model_application}
 
     % conclusion ---------------
-    \input{chapters/conclusions}
+    \input{LaTeX-thesis/chapters/conclusions}
 
     
     % appendices ---------------
     \begin{appendices}
-        \include{chapters/appendix/a/a-michele_sambin_videoloop}
-        \include{chapters/appendix/b/b-hybrid_reactivation_il_caos_delle_sfere}
-        \include{chapters/appendix/c/c-the_score_in_live_electronics_music}
-        \include{chapters/appendix/d/d-sustainability_and_longevity_of_NIMEs}
-        \include{chapters/appendix/e-web_review_tables}
-        \include{chapters/appendix/f-table_of_organisations}
+        \include{LaTeX-thesis/chapters/appendix/a/a-michele_sambin_videoloop}
+        \include{LaTeX-thesis/chapters/appendix/b/b-hybrid_reactivation_il_caos_delle_sfere}
+        \include{LaTeX-thesis/chapters/appendix/c/c-the_score_in_live_electronics_music}
+        \include{LaTeX-thesis/chapters/appendix/d/d-sustainability_and_longevity_of_NIMEs}
+        \include{LaTeX-thesis/chapters/appendix/e-web_review_tables}
+        \include{LaTeX-thesis/chapters/appendix/f-table_of_organisations}
     \end{appendices}
 
     % glossary, bibliography, acknowledges
