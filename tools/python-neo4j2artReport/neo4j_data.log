@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.2)  30 DEC 2024 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.2)  4 JAN 2025 10:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/alessandrofiordelmondo/Documents/room/python-neo4j2artReport/neo4j_data.tex
-(/Users/alessandrofiordelmondo/Documents/room/python-neo4j2artReport/neo4j_data.tex
+**/Users/alessandrofiordelmondo/Documents/room/phd-keeping_live_media_art_alive/tools/python-neo4j2artReport/neo4j_data.tex
+(/Users/alessandrofiordelmondo/Documents/room/phd-keeping_live_media_art_alive/tools/python-neo4j2artReport/neo4j_data.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -141,27 +141,52 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 16.
+<image.jpg, id=1, 1855.93375pt x 974.64125pt>
+File: image.jpg Graphic file (type jpg)
+<use image.jpg>
+Package pdftex.def Info: image.jpg  used on input line 20.
+(pdftex.def)             Requested size: 187.19833pt x 98.30264pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\OT1/cmr/m/n/12 Fondazione Bevilac-qua La Masa,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\OT1/cmr/m/n/12 MICHELE SAM-BIN:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\OT1/cmr/m/n/12 ARCH[]E/T[]ECHNE. IL TEMPO
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 35--35
+[]|\OT1/cmr/m/n/12 Opera Lib-era - Sala Dei Gi-ganti,
+ []
+
 [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./neo4j_data.aux)
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image.jpg>] [2] (./neo4j_data.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1505 strings out of 474116
- 24942 string characters out of 5743682
- 1929187 words of memory out of 5000000
- 23891 multiletter control sequences out of 15000+600000
+ 1514 strings out of 474116
+ 25186 string characters out of 5743682
+ 1937187 words of memory out of 5000000
+ 23900 multiletter control sequences out of 15000+600000
  563237 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,282b,202s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,1077b,207s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on neo4j_data.pdf (1 page, 37412 bytes).
+Output written on neo4j_data.pdf (2 pages, 136864 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 27 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

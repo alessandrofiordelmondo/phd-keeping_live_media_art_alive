@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1735552527.6932 "/Users/alessandrofiordelmondo/Documents/room/python-neo4j2artReport/neo4j_data.tex" "neo4j_data.pdf" "neo4j_data" 1735552528.08445 0
-  "/Users/alessandrofiordelmondo/Documents/room/python-neo4j2artReport/neo4j_data.tex" 1735552527.50769 812 7bc0c0d80e54d5465720ac4756f3ccf9 ""
+["pdflatex"] 1735984621.71552 "/Users/alessandrofiordelmondo/Documents/room/phd-keeping_live_media_art_alive/tools/python-neo4j2artReport/neo4j_data.tex" "neo4j_data.pdf" "neo4j_data" 1735984622.21555 0
+  "/Users/alessandrofiordelmondo/Documents/room/phd-keeping_live_media_art_alive/tools/python-neo4j2artReport/neo4j_data.tex" 1735984614.19415 2512 1bf8af0aedc6523d330d38db71961fdb ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -35,8 +35,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1733133851.6518 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733133774 8221413 51e8736a4336260dc19b2b808da8e959 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "neo4j_data.aux" 1735552528.05784 135 b23a7cf93381cb4e8221106c67d5d4df "pdflatex"
-  "neo4j_data.tex" 1735552527.50769 812 7bc0c0d80e54d5465720ac4756f3ccf9 ""
+  "image.jpg" 1735984614.19358 89145 f0b5fc8acced2c017269e4e7b7eeaa79 ""
+  "neo4j_data.aux" 1735984622.18169 135 84f009069397670ede22a0e34e185d66 "pdflatex"
+  "neo4j_data.tex" 1735984614.19415 2512 1bf8af0aedc6523d330d38db71961fdb ""
   (generated)
   "neo4j_data.aux"
   "neo4j_data.log"

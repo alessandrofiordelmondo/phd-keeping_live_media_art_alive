@@ -1,8 +1,8 @@
-PWD /Users/alessandrofiordelmondo/Documents/room/python-neo4j2artReport
+PWD /Users/alessandrofiordelmondo/Documents/room/phd-keeping_live_media_art_alive/tools/python-neo4j2artReport
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/alessandrofiordelmondo/Documents/room/python-neo4j2artReport/neo4j_data.tex
+INPUT /Users/alessandrofiordelmondo/Documents/room/phd-keeping_live_media_art_alive/tools/python-neo4j2artReport/neo4j_data.tex
 OUTPUT neo4j_data.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -58,10 +58,15 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT ./image.jpg
+INPUT ./image.jpg
+INPUT ./image.jpg
+INPUT ./image.jpg
+OUTPUT neo4j_data.pdf
+INPUT ./image.jpg
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-OUTPUT neo4j_data.pdf
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT neo4j_data.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
