@@ -14,12 +14,11 @@ def extract_file_id(url):
     return None
 
 
-def download(url):
+def download(url, filename):
     file_id = extract_file_id(url)
     print(f"Extracted File ID: {file_id}")
     # Replace 'FILE_ID' with the actual file ID
     download_url = f"https://drive.google.com/uc?id={file_id}&export=download"
-    filename = "image.jpg"
     response = requests.get(download_url, stream=True)
     
     if response.status_code == 200:
